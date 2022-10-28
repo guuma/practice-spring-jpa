@@ -1,0 +1,11 @@
+# DB
+spring:
+  datasource:
+    username: root
+    password: passw@rd
+    url: jdbc:mysql://localhost:3309/springDataJpaPracticeDb
+  flyway:
+    user: root
+    enabled: true
+    password: passw@rd
+    url: jdbc:mysql://localhost:3309/springDataJpaPracticeDb

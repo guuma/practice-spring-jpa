@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:8.0
+    container_name: spring-data-jpa-practice-db
+    environment:
+      MYSQL_DATABASE: springDataJpaPracticeDb
+      MYSQL_ROOT_PASSWORD: passw@rd
+      TZ: "Asia/Tokyo"
+    volumes:
+      - ./docker/db/data:/var/lib/mysql
+      - ./docker/db:/tmp/db
+    ports:
+      - 3309:3306
